@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+#login {
+  width: 320px;
+  margin: 120px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#app {
+  display: none;
+  width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+nav button {
+  margin-right: 8px;
+  padding: 8px 12px;
+}
+
+.page {
+  display: none;
+  margin-top: 20px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#error {
+  color: red;
+}
