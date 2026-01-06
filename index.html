@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enterprise Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Admin Login</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="login()">Login</button>
+  <p id="error"></p>
+</div>
+
+<div id="app">
+  <h1>Enterprise Admin Panel</h1>
+
+  <nav>
+    <button onclick="show('dashboard')">Dashboard</button>
+    <button onclick="show('users')">Users</button>
+    <button onclick="show('logs')">Audit Logs</button>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <section id="dashboard" class="page">
+    <h2>Dashboard</h2>
+    <p>Total Users: <strong id="userCount">0</strong></p>
+    <p>System Status: <strong>Operational</strong></p>
+  </section>
+
+  <section id="users" class="page">
+    <h2>User Management</h2>
+    <input type="text" id="username" placeholder="New user name">
+    <button onclick="addUser()">Add User</button>
+    <ul id="userList"></ul>
+  </section>
+
+  <section id="logs" class="page">
+    <h2>Audit Logs</h2>
+    <ul id="logList"></ul>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
